@@ -4,7 +4,7 @@ clear
 nums=$(seq 100 299 | tr -s '\n' '|')
 nums+=$(seq -s"|" 400 499)
 
-echo -e "\e[01;33mATENCION, HERRAMIENTA PARA HACKERS \e[0m☠\n\n\e[02meEsta herramienta hara solicitudes\npara un dominio especifico\nutilizando un rango de ip\nUtiliza el 4G sin saldo.\n\nFormato  del proxy: 10.10. o 10.10.10.\nSe haran muchas solicitudes\nagregando de 0 a 255\e[0m\n"; sleep 1
+echo -e "\e[01;33mATENCION, HERRAMIENTA PARA HACKERS \e[0m☠\n\n\e[02mEsta herramienta hará solicitudes\npara un dominio especifico\nutilizando un rango de ip\nUtiliza Los datos del telefono con el 4G sin saldo.\n\nFormato del proxy: 10.10. o 10.10.10.\nSe harán muchas solicitudes\nagregando de 0 a 255\e[0m\n"; sleep 1
 
 while :; do
 echo -e "\e[01;37mColoque la IP/Proxy que desea utilizar\e[0m"
