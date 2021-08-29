@@ -52,7 +52,7 @@ read foo
 3)echo ""
 echo -e "\e[1;33mBAJANDO SUBLIST3R\e[0m";
 pkg install git -y && pkg install python -y && pip install requests && pip install dnspython && pip install argparse
-wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/subbrute.py
+wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
 mkdir subbrute
 cd subbrute 
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/names.txt
