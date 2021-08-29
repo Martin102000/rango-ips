@@ -24,6 +24,14 @@ case $opcion in
 echo -n "HOST: ";
 read HOST;
 python sublist3r.py -d $HOST -p 80,443 -o dominios.txt
+;;
+#Fin del menu/in the end
+0)clear
+exit 0;;
+#error
+*)clear
+echo "Invalid command...";
+sleep 1.5
+;;
+esac
 done
-
-
