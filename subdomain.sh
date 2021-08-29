@@ -1,24 +1,20 @@
 #!bin/bash
 #Created: 13/11/2018
 #Upgrade 12/01/2019
-#by: real strategy
-#Successful update
-#MESSAGE: Never stop learning, if you are here is out of curiosity and try to learn shell or bash with the help of google search among others and so you will have more ease of course take time but you will learn even if editing
-clear 
+#by: real strategy                                                                                                                                                               #Successful update
+#MESSAGE: Never stop learning, if you are here is out of curiosity and try to learn shell or bash with the help of google search among other                                    >
+clear
 while :
 do
 #menu banner
 clear
-echo -e "\e[1;33m(98/8)\e[1;32m" 
-echo "    __  __           __     ______     __                  __             "
-echo "   / / / /___  _____/ /_   / ____/  __/ /__________  _____/ /_____  _____ "
-echo "  / /_/ / __ \/ ___/ __/  / __/ | |/_/ __/ ___/ __ \/ ___/ __/ __ \/ ___/ "
-echo " / __  / /_/ (__  ) /_   / /____>  </ /_/ /  / /_/ / /__/ /_/ /_/ / /     "
-echo "/_/ /_/\____/____/\__/  /_____/_/|_|\__/_/   \__,_/\___/\__/\____/_/      "
-echo -e "\e[1;33mV= 2.0                    (99) Spanish                    (98) English     " 
-echo "" 
-echo -e "\e[1;31m[1]\e[1;32m SCRIPT A USAR"
-echo -e "\e[1;31m[2]\e[1;32m SHOW WEB STATUS"
+echo -e "\e[1;33m(98/8)\e[1;32m"                                                                                                                                                 echo "                      ____                                    "
+echo "   / / / /___  _/ /_   / ____/  / /________  _/ /_____  _ "
+echo "  / /_/ /  \/ _/ /  / / | |/_/ / _/  \/ _/ /  \/ _/ "
+echo " /   / /_/ (__  ) /_   / /____>  </ /_/ /  / /_/ / /__/ /_/ /_/ / /     "
+echo "/_/ /_/\____/____/\__/  /_____/_/|_|\__/_/   \__,_/\___/\__/\____/_/      "                                                                                                echo -e "\e[1;33mV= 2.0                    (99) Spanish                    (98) English     "
+echo ""
+echo -e "\e[1;31m[1]\e[1;32m HOST & SSL EXTRACTOR"                                                                                                                               echo -e "\e[1;31m[2]\e[1;32m SHOW WEB STATUS"
 echo -e "\e[1;31m[3]\e[1;32m SAVE HOSTS EXTRACTED"
 echo -e "\e[1;31m[4]\e[1;32m CREATE PAYLOAD FUNCTIONAL"
 echo -e "\e[1;31m[5]\e[1;32m SEE WEB AND HOST PORTS"
@@ -45,7 +41,15 @@ read foo
 2)echo ""
 echo "Showing host status...";
 echo ""
-bash .status.sh
+try=$(curl -m 3 -s -o /dev/null -w "%{http_code}" datacenter.vps-ssl.xyz -H "Upgrade: websocket" -x https://$(cat dominios.txt):443)
+          eval "case $try in
+                 $nums\ )
+                      echo -e \"\e[01;33m$(cat dominios.txt)\e[0m | \e[01;37mIP OK - STATUS $try\e[0m\"
+                      echo \"$(cat dominios.txt)|$try\" >> OK.txt;;
+                   *)
+                      echo -e \"$(cat dominios.txt) | \e[01;33mSTATUS $try\e[0m\"
+           esac"
+      done; echo ================= >> OK.txt; break
 echo ""
 echo -e "\e[1;31mpress enter to continue with the script...\e[0m"
 read foo
@@ -126,5 +130,3 @@ sleep 1.5
 ;;
 esac
 done
-
-
