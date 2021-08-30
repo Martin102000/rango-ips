@@ -52,16 +52,16 @@ read foo
 ;;
 3)echo ""
 echo -e "\e[1;33mBAJANDO SUBLIST3R\e[0m";
-pkg install git && pkg install python && pip install requests && pip install dnspython && pip install argparse
 wget https://raw.githubusercontent.com/Martin102000/rango-ips/main/privado.sh
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
-wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
+pkg install git && pkg install python && pip install requests && pip install dnspython && pip install argparse
+wget https://raw.githubusercontent.com/Martin102000/rango-ips/main/privado.sh
 mkdir subbrute
 cd subbrute 
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/names.txt
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/resolvers.txt
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/subbrute.py
-wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
+cd ..
 ;;
 4)echo ""
 chmod 777 privado.sh
