@@ -21,7 +21,8 @@ echo "(___/    \___)\_______)\_______) "
 echo "script realizada por @alekc_2000"
 echo -e "\e[1;31m[1]\e[1;32m BUSCADOR DE SUBDOMINIOS"
 echo -e "\e[1;31m[2]\e[1;32m PROBAR SUBDOMINIOS DOMINIOS.TXT"
-echo -e "\e[1;31m[3]\e[1;32m INSTALAR SUBLIST3R (PRIMER PASO)"
+echo -e "\e[1;31m[3]\e[1;32m INSTALAR SUBLIST3R Y SCRIPT CLOUD (PRIMER PASO)"
+echo -e "\e[1;31m[4]\e[1;32m BUSCAR IP HOST CLOUDFLARE"
 echo ""
 echo -e "\e[1;36m"
 echo -n "Choose option: "
@@ -42,7 +43,7 @@ read foo
 echo "Probando y analizando subdominios en el archivo dominios.txt...";
 echo ""
 while read LINE; do
-curl -m 3 -s -o /dev/null -w "%{http_code}" datacenter.vps-ssl.xyz -H "Upgrade: websocket" -x https://$(cat dominios.txt):443 | grep Forbidden
+curl -m 3 -s -o /dev/null -w "%{http_code}" datacenter.vps-ssl.xyz -I -H "Upgrade: websocket" -x https://$(cat dominios.txt):443 | grep HTTP
   echo ' '$LINE
 done < dominios.txt
 echo ""
@@ -52,7 +53,7 @@ read foo
 3)echo ""
 echo -e "\e[1;33mBAJANDO SUBLIST3R\e[0m";
 pkg install git -y && pkg install python -y && pip install requests && pip install dnspython && pip install argparse
-wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
+wget https://raw.githubusercontent.com/Martin102000/rango-ips/main/privado.sh
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
 mkdir subbrute
 cd subbrute 
@@ -60,9 +61,9 @@ wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/names.
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/resolvers.txt
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/subbrute.py
 ;;
-4)clear
-bash .payloads.ingles
-read foo;
+4)echo ""
+chmod 777 privado.sh
+bash privado.sh
 ;;
 5)echo ""
 echo -ne "\e[1;31m DOMAIN(IP/WEB): ";
