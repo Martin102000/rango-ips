@@ -1,9 +1,3 @@
-#!bin/bash
-#Created: 13/11/2018
-#Upgrade 12/01/2019
-#by: real strategy
-#Successful update
-#MESSAGE: Never stop learning, if you are here is out of curiosity and try to learn shell or bash with the help of google search among others and so you will have more ease of course take time but you will learn even if editing
 clear
 while :
 do
@@ -19,6 +13,7 @@ echo "  //  __'  \  \  |___  // ___)_  "
 echo " /   /  \\  \( \_|:  \(:       | "
 echo "(___/    \___)\_______)\_______) "
 echo "script realizada por @alekc_2000"
+echo ""
 echo -e "\e[1;31m[1]\e[1;32m BUSCADOR DE SUBDOMINIOS"
 echo -e "\e[1;31m[2]\e[1;32m PROBAR SUBDOMINIOS DOMINIOS.TXT"
 echo -e "\e[1;31m[3]\e[1;32m INSTALAR SUBLIST3R Y SCRIPT CLOUD (PRIMER PASO)"
@@ -66,7 +61,7 @@ cd ..
 4)echo ""
 chmod 777 privado.sh
 bash privado.sh
-;;
+echo -e "\e[1;31mpresiona enter para volver al script...\e[0m"
 5)echo ""
 echo -ne "\e[1;31m DOMAIN(IP/WEB): ";
 read MAIN
@@ -99,18 +94,7 @@ read foo
 8)echo ""
 echo -e "\e[1;33mCREDITS TO THE DEVELOPER\e[0m"
 echo ""
-echo -e "\e[1;31mCoder: @RealStrategy y el grupo vip RS"
-echo -e "\e[1;32m"
-echo "YOUTUBE : https://youtube.com/RealHackRWAM "
-echo "TELEGRAM: https://t.me/RealHackRWAM "
-echo "TELEGRAM: https://t.me/RealStrategyRS "
-echo "FACEBOOK: https://m.facebook.com/groups/142565756559228 "
-echo "FACEBOOK: https://m.facebook.com/RealHackRWAM "
-echo ""
-echo -e "\e[1;31mMESSAJE FROM RS\e[0m"
-echo ""
-echo -e "\e[1;36mNever stop learning... :)\e[0m"
-echo ""
+echo -e "\e[1;31mCoder: @alekc_2000"
 read foo;
 ;;
 98)clear
