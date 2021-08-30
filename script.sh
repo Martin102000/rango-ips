@@ -61,6 +61,7 @@ cd subbrute
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/names.txt
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/resolvers.txt
 wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/subbrute/subbrute.py
+wget https://raw.githubusercontent.com/aboul3la/Sublist3r/master/sublist3r.py
 ;;
 4)echo ""
 chmod 777 privado.sh
